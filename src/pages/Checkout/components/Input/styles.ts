@@ -25,6 +25,7 @@ export const InputContainer = styled.div`
   > span {
     font-size: 0.75rem;
     font-style: italic;
+    color: ${({ theme }) => theme['base-label']};
   }
 
   &:focus-within {
