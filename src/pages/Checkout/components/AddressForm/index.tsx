@@ -13,7 +13,7 @@ export function AddressForm() {
         <MapPinLine size={22} />
         <div>
           <h3>Endereço de Entrega</h3>
-          Informe o endereço onde deseja receber seu pedido
+          <p>Informe o endereço onde deseja receber seu pedido</p>
         </div>
       </AddressFormHeader>
       <AddressFormContent>
