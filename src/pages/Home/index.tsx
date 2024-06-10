@@ -1,14 +1,12 @@
-import { HomeContainer, HomeContent } from './styles'
-import coffeeImg from '../../assets/coffee.png'
 import { Intro } from './components/Intro'
+import { CoffeeList } from './components/CoffeeList'
+import { HomeContainer } from './styles'
 
 export function Home() {
   return (
     <HomeContainer>
-      <HomeContent>
-        <Intro />
-        <img src={coffeeImg} alt="" />
-      </HomeContent>
+      <Intro />
+      <CoffeeList />
     </HomeContainer>
   )
 }
