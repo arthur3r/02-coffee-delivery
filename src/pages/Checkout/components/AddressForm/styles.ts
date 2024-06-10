@@ -5,6 +5,7 @@ export const AddressFormContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 0.75rem;
 
   background: ${({ theme }) => theme['base-card']};
   border-radius: 6px;
