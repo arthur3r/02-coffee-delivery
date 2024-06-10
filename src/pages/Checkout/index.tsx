@@ -1,7 +1,13 @@
+import { AddressForm } from './components/AddressForm'
+import { CheckoutContainer } from './styles'
+
 export function Checkout() {
   return (
-    <div>
-      <h1>Checkout</h1>
-    </div>
+    <CheckoutContainer>
+      <section>
+        <h2>Complete seu pedido</h2>
+        <AddressForm />
+      </section>
+    </CheckoutContainer>
   )
 }
