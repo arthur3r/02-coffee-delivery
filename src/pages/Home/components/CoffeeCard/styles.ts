@@ -75,9 +75,11 @@ export const BuyActions = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  height: 2.375rem;
 
   > button[type='button'] {
-    padding: 0.5rem;
+    height: 100%;
+    padding: 0 0.5rem;
     border-radius: 6px;
     background: ${({ theme }) => theme['purple-dark']};
     border: 0;

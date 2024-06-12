@@ -2,12 +2,15 @@ import styled from 'styled-components'
 
 export const CounterContainer = styled.div`
   flex: 1;
-  padding: 0.5rem;
+  height: 100%;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.25rem;
   background: ${({ theme }) => theme['base-button']};
   border-radius: 6px;
+  text-align: center;
 
   > span {
     width: 1.25rem;
