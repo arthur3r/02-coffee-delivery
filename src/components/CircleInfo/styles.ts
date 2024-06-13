@@ -5,6 +5,10 @@ export const CircleInfoContainer = styled.div`
   align-items: center;
   gap: 0.75rem;
   width: fit-content;
+
+  span {
+    font-weight: 700;
+  }
 `
 
 interface IconContainerProps {
