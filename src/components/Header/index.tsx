@@ -7,8 +7,15 @@ import {
   HeaderContainer,
   LocationButton,
 } from './styles'
+import { useContextSelector } from 'use-context-selector'
+import { CartContext } from '../../contexts/CartContext'
 
 export function Header() {
+  const cartCoffees = useContextSelector(
+    CartContext,
+    (context) => context.cartCoffees,
+  )
+
   return (
     <HeaderContainer>
       <NavLink to="/">
@@ -24,7 +31,7 @@ export function Header() {
         <NavLink to="/checkout">
           <CartButton>
             <ShoppingCart weight="fill" size={22} />
-            <span>3</span>
+            {cartCoffees.length > 0 && <span>{cartCoffees.length}</span>}
           </CartButton>
         </NavLink>
       </ActionsContainer>
